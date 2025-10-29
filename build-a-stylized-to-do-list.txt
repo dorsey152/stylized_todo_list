@@ -1,0 +1,141 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Styled To-Do List</title>
+</head>
+
+<body id="sheet">
+    <main>
+        <h1 class="top">Brewing Beer Check List</h1>
+        <ul class="todo-list">
+            <li class="buy">
+                <!--Is an input a void element?-->
+                <input type="checkbox" id="buy">
+                <label for="buy">Buy brewing ingredients.(malt, hops, yeast, etc.)</label>
+                <ul class="sub-item">
+                    <li>
+                        <a class="sub-item-link" href="https://www.steinfillers.com/" target="_blank">Stein Fillers</a>
+                    </li>
+                </ul>
+            </li>
+            <br/>
+            <li class="brew">
+                <input type="checkbox" id="brew">
+                <label for="brew">Conduct your mash and brew the wort</label>
+                <ul class="sub-item">
+                    <li>
+                        <a class="sub-item-link" href="https://byo.com/newbrew/all-grain/" target="_blank">Helpful tips & step-by-step</a>
+                    </li>
+                </ul>
+            </li>
+            <br/>
+            <li class="ferment">
+                <input type="checkbox" id="ferment">
+                <label for="ferment">Rack to fermenting vessel. Re-rack and bottle</label>
+                <ul class="sub-item">
+                    <li>
+                        <a class="sub-item-link" href="https://homebrewtalk.com/threads/beer-fermentation-time-lapse-video.245409/" target="_blank">It should look active</a>
+                    </li>
+                </ul>
+            </li>
+            <br/>
+            <li class="drink">
+                <input type="checkbox" id="drink">
+                <label for="drink">Open your first homemade beer!</label>
+                <ul class="sub-item">
+                    <li>
+                        <a class="sub-item-link" href="https://beerology.ca/wp-content/uploads/2011/09/Beerology_Tasting.pdf" target="_blank">Always take good notes</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+.top {
+  text-align: center;
+}
+
+a {
+text-decoration: none;
+color: darkgoldenrod;
+}
+
+a:hover {
+  color: goldenrod;
+}
+
+a:visited {
+  color: olivedrab;
+}
+
+a:focus {
+  outline: 2px solid chocolate
+}
+
+a:active {
+  color: blue;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+ul {
+  margin-top: 10px;
+  list-style: square;
+}
+
+.buy {
+ width: 80%;
+  background-color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px 45px;
+  max-width: 500px;
+}
+
+.brew {
+  width: 80%;
+  background-color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px 45px;
+  max-width: 500px;
+}
+
+.ferment {
+   width: 80%;
+  background-color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px 45px;
+  max-width: 500px;
+}
+
+.drink {
+   width: 80%;
+  background-color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px 45px;
+  max-width: 500px;
+}
+
+** end of styles.css **
+
